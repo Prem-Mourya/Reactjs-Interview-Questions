@@ -14,4 +14,10 @@ Key benefits of Fiber:
 ->Handles interruption and prioritization of tasks.
 ->Improves performance for large, complex UIs.
 
+3. Reconciliation
+Reconciliation is the process React uses to update the DOM efficiently. It involves comparing the current Virtual DOM with the previous version to determine the minimal number of changes required to update the real DOM. This process is powered by the diffing algorithm, which works under two key assumptions:
+
+Elements of different types will produce different trees.
+Elements of the same type will be updated, keeping their state when possible.
+
 Source: https://youtu.be/MPCVGFvgVEQ?si=1_UHH1C8MMQJ5khU
